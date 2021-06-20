@@ -1,0 +1,41 @@
+(export (version D)
+  (design
+    (source "C:\\Users\\lixs\\OneDrive - 同志社大学\\キーボード\\設計中キーボード\\lunchbox v3\\topplate v1\\topplate\\topplate.sch")
+    (date "2021/02/02 18:16:42")
+    (tool "Eeschema (5.1.8)-1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source topplate.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref H1)
+      (value MountingHole_Pad)
+      (footprint kbd:M2_Hole_TH)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 60192160)))
+  (libparts
+    (libpart (lib Mechanical) (part MountingHole_Pad)
+      (description "Mounting Hole with connection")
+      (docs ~)
+      (footprints
+        (fp MountingHole*Pad*))
+      (fields
+        (field (name Reference) H)
+        (field (name Value) MountingHole_Pad))
+      (pins
+        (pin (num 1) (name 1) (type input)))))
+  (libraries
+    (library (logical Mechanical)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib")))
+  (nets
+    (net (code 2) (name GND)
+      (node (ref H1) (pin 1)))))
